@@ -1,0 +1,63 @@
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.box{
+    background-color: #D6E4FF;
+    height: 80px;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+}
+
+.ckbox {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+}
+
+all {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+}
+.check {
+    margin-left: 60px;
+}
+.first {
+    border: 1px solid black;
+    width: 30%;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+    text-align: center;
+}
+
+.second {
+    border: 1px solid black;
+    width: 70%;
+}
+
+label {
+    display : flex;
+    justify-content : center;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom {
+    margin: 0 50px 0 50px;
+}
+
+.start {
+    background-color: #D9D9D9;
+    width: 30%;
+    height: 30%;
+    text-decoration: none;
+    color: blue;
+}

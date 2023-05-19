@@ -1,0 +1,56 @@
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.st{
+    background-color: #D6E4FF;
+    height: 80px;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+}
+
+.check {
+    margin-left: 20px;
+}
+
+.question {
+    border: 1px solid black;
+    margin: 0 10px 0 10px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+.sentence {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.ca {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.bottom {
+    display: inline-block;
+    align-items: center;
+    text-align: left;
+}
+
+.q {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.idk {
+    height: 50px;
+    margin: 0 10px;
+}
+
+.box {
+    width: 100%;
+    margin: 0 10px;
+}

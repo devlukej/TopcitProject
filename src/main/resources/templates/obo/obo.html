@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>한문제씩 풀기</title>
+    <link rel="stylesheet" th:href="@{/css/obo.css}">
+</head>
+<body>
+
+<div class="title"><h1>Topcit CBT</h1></div>
+
+<div class="top">
+    <div class="box"><h3>한문제씩 풀기</h3></div>
+</div>
+
+
+<div class="check"><h3>영역 체크</h3></div>
+
+<div class="bottom">
+    <div class="all">
+        <div class="left">
+            <div class="ckbox">
+                <div class="first">
+                    <label><input type="checkbox"><h5>기술영역</h5></label>
+                </div>
+                <div class="second">
+                    <h5>소프트웨어개발 능력</h5>
+                    <h5>데이터 이해와 활용</h5>
+                    <h5>시스템 아키텍처 이해와 활용</h5>
+                    <h5>정보보안 이해와 활용</h5>
+                </div>
+            </div>
+
+            <div class="ckbox">
+                <div class="first">
+                    <label><input type="checkbox">
+                        <h5>비즈니스영역</h5></label>
+                </div>
+                <div class="second">
+                    <h5>IT비즈니스와 윤리 이해</h5>
+                    <h5>프로젝트관리와 테크니컬 커뮤니케이션의 이해</h5>
+                </div>
+            </div>
+
+            <div class="ckbox">
+                <div class="first">
+                    <label><input type="checkbox">
+                        <h5>통합영역</h5></label>
+                </div>
+                <div class="second">
+                    <h5>통합문제해결역량</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <a class="start" th:href="@{/obo/question}"><h3>시작</h3></a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
