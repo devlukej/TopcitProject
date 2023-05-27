@@ -1,6 +1,18 @@
 .title {
     width: 100%;
     text-align: center;
+    height: 60px;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+}
+
+.home {
+    font-weight: bold;
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+
 }
 
 .st{

@@ -39,6 +39,9 @@ public class UserController {
         return "test/test";
     }
 
+    @GetMapping("/wrong")
+    public String wrong() {
 
-
+        return "wrong/wrong";
+    }
 }
