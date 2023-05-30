@@ -19,15 +19,17 @@
 
     <div class="question">
         <div class="top">
-            <span th:text="${user?.id}"></span>
-            <h4 class="sentence"><span th:text="${user.title}"></span></h4>
-            <h4 class="ca"><span th:text="${user.avg}"></span></h4>
+            <h4 class="sentence"><span th:text="${userDto.text}"></span></h4>
+            <h4 class="ca">정답률 : <span th:text="${userDto.avg}"></span></h4>
         </div>
         <div class="bottom">
-            <div class="q"><a href="#">1.<span th:text="${user.answer_1w}"></span></a></div>
-            <div class="q"><a href="#">2.<span th:text="${user.answer_2w}"></span></a></div>
-            <div class="q"><a href="#">3.<span th:text="${user.answer_3w}"></span></a></div>
-            <div class="q"><a href="#">4.<span th:text="${user.answer_4w}"></span></a></div>
+            <div th:each="answerList : ${answerList}">
+                <div class="q"><a href="#">1.<span th:attr="data-answer=${answerList}"></span></a></div>
+            </div>
+            <div class="q"><a href="#">1.<span th:text="${userDto.answer_1w}"></span></a></div>
+            <div class="q"><a href="#">2.<span th:text="${userDto.answer_2w}"></span></a></div>
+            <div class="q"><a href="#">3.<span th:text="${userDto.answer_3w}"></span></a></div>
+            <div class="q"><a href="#">4.<span th:text="${userDto.answer_4w}"></span></a></div>
         </div>
     </div>
 

@@ -20,7 +20,7 @@ public class UserService {
 
 
     @Transactional
-    public List<UserDto> getUserlist() {
+    public List<UserDto> getQuetionlist() {
         List<UserEntity> userEntities = userRepository.findAll();
         List<UserDto> userDtoList = new ArrayList<>();
 
@@ -49,7 +49,7 @@ public class UserService {
     }
 
     @Transactional
-    public UserDto getPost(Long id) {
+    public UserDto getQuetion(Long id) {
         Optional<UserEntity> userEntityWrapper = userRepository.findById(id);
         UserEntity userEntity = userEntityWrapper.get();
 

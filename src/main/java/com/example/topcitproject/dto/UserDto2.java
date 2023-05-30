@@ -1,17 +1,18 @@
 package com.example.topcitproject.dto;
 
 
-import com.example.topcitproject.domain.entity.UserEntity;
+import com.example.topcitproject.domain.entity.UserEntity2;
 import lombok.*;
 
 @Getter
 @Setter
 @ToString
 @NoArgsConstructor
-public class UserDto {
+public class UserDto2 {
     private Long id;
     private String text;
     private String text_pic;
+
     public String answer;
     public String answer_1w;
     public String answer_2w;
@@ -25,8 +26,8 @@ public class UserDto {
     private String point;
 
 
-    public UserEntity toEntity() {
-        return UserEntity.builder()
+    public UserEntity2 toEntity2() {
+        return UserEntity2.builder()
                 .id(id)
                 .text(text)
                 .text_pic(text_pic)
@@ -45,7 +46,7 @@ public class UserDto {
     }
 
     @Builder
-    public UserDto(Long id, String text, String text_pic, String answer, String answer_1w, String answer_2w
+    public UserDto2(Long id, String text, String text_pic, String answer, String answer_1w, String answer_2w
             , String answer_3w, String answer_4w, String avg, String label, String type, String wrong, String count
             , String point) {
         this.id = id;

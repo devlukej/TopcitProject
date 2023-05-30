@@ -10,8 +10,8 @@ import javax.persistence.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-@Table(name = "topcit")
-public class UserEntity {
+@Table(name = "topcit2")
+public class UserEntity2 {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -57,7 +57,7 @@ public class UserEntity {
     private String avg;
 
     @Builder
-    public UserEntity(Long id, String text, String text_pic, String answer, String answer_1w, String answer_2w
+    public UserEntity2(Long id, String text, String text_pic, String answer, String answer_1w, String answer_2w
             , String answer_3w, String answer_4w, String avg, String label, String type, String wrong, String count
             , String point) {
         this.id = id;
