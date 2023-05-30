@@ -15,7 +15,6 @@ spring:
         enabled: true
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    open-in-view: false
     show-sql: true
     hibernate:
       format_sql: false

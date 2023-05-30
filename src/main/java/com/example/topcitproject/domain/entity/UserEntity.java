@@ -1,6 +1,7 @@
 package com.example.topcitproject.domain.entity;
 
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -55,5 +56,24 @@ public class UserEntity {
     @Column(length = 20, nullable = false)
     private String avg;
 
+    @Builder
+    public UserEntity(Long id, String text, String text_pic, String answer, String answer_1w, String answer_2w
+            , String answer_3w, String answer_4w, String avg, String label, String type, String wrong, String count
+            , String point) {
+        this.id = id;
+        this.text = text;
+        this.text_pic = text_pic;
+        this.answer = answer;
+        this.answer_1w = answer_1w;
+        this.answer_2w = answer_2w;
+        this.answer_3w = answer_3w;
+        this.answer_4w = answer_4w;
+        this.avg = avg;
+        this.label = label;
+        this.type = type;
+        this. wrong = wrong;
+        this.count = count;
+        this.point = point;
+    }
 
 }
